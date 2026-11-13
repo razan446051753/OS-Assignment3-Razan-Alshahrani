@@ -32,10 +32,10 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
+| **Full Name** | [Razan Ahmed Alshahrani] |
+| **Student ID** | [446051753] |
+| **University Email** | [446051753]@std.psau.edu.sa |
+| **GitHub Username** | [razan446051753] |
 | **Repository Link** | [Paste your repository link here] |
  
 ---
@@ -132,68 +132,104 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [October 31, 2026]
+**What I did**: Set up assignment repository, updated my student ID and test the original program.
 
 **Details**:
+- Forked the starter repository on github
+- Verified my repo was public.
+- I ran the original Java program before I changed my student ID.
+- Changed student ID to my own.
+- Executed the program again after the modification.
+- Dedicated and uploaded the student id change to GitHub.
 
-**Challenges**:
+**Challenges**: I didn’t have any major issues with the initial setup.
 
-**Solution**:
+**Solution**: I checked the repository settings and tried the program before and after changing my student id.
 
-**Time spent**:
+**Time spent**: 1 hours and 30 min.
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 2 - [November 9, 2026]
+
+**What I did**: Implemented Feature 1 using ReentrantLock to protect shared ReadyQueue.
+
 
 **Details**:
+- Added a ReentrantLock to class ReadyQueue.
+- Added protection to add(), poll(), processOf() and snapshot() methods.
+- Use try/finally to ensure we always release the lock.
+- Executed the program and confirmed that it ran without Java errors.- Added Feature 1 to GitHub.
 
-**Challenges**:
+**Challenges**: I had to understand how multiple CPU threads access the same ReadyQueue.
 
 **Solution**:
+ I used ReentrantLock to make sure that only one thread can access the protected queue operations at a time.
 
-**Time spent**:
+**Time spent**: 2 hours.
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 3 - [November 11, 2026]
+
+**What I did**: Implemented Feature 2 to protect shared statistics using ReentrantLock.
 
 **Details**:
+- Added one ReentrantLock named statsLock to the SharedStats class.
+- Protected the three shared variables: contextSwitchCount, completedProcessCount, and totalServiceTime.
+- Used lock(), try/finally, and unlock() to protect all three update methods.
+- Protected the three getter methods to ensure safe reading.
+- Tested the program and confirmed that all three statistics matched their expected values.
+- Committed and pushed Feature 2 to GitHub.
 
-**Challenges**:
+**Challenges**: I initially encountered Java errors because of duplicated methods and misplaced code.
 
-**Solution**:
+**Solution**: I restored the last working commit and reapplied the changes carefully, one method at a time.
 
-**Time spent**:
+**Time spent**: 2 hours .
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
+### Entry 4 - [November 12, 2026]
+
+**What I did**: Implemented Feature 3 using Semaphore to eliminate busy waiting.
 
 **Details**:
+- Added a counting Semaphore to the ReadyQueue class.
+- Used release() to signal when a new process becomes available.
+- Added waitForProcess() using acquire() to block CPU threads when the queue is empty.
+- Removed the busy-waiting loop from CpuWorker.
+- Added wakeUpAllCPUs() to wake waiting CPU threads when all processes are completed.
+- Added a condition to allow CPU threads to exit safely.
+- Tested the program and confirmed that all four verification checks passed.
+- Committed and pushed Feature 3 to GitHub.
 
-**Challenges**:
+**Challenges**: I initially placed the Semaphore release statement in the wrong location. I also needed to ensure that waiting CPU threads could terminate correctly.
 
-**Solution**:
+**Solution**: I moved the statement to the correct location inside add() and implemented a wake-up mechanism for waiting CPU threads.
 
-**Time spent**:
+**Time spent**: 2 hours.
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 5 - [November 13, 2026]
+
+**What I did**: Worked on documenting my assignment progress in MY_WORK.md.
 
 **Details**:
+- Completed my student information.
+- Reviewed my GitHub commit history.
+- Checked the dates of my previous commits.
+- Documented the work completed for Features 1, 2, and 3.
+- Recorded the challenges and solutions I encountered.
+- Organized my development log in chronological order.
 
-**Challenges**:
+**Challenges**: I needed to remember the details and dates of my previous development sessions.
 
-**Solution**:
+**Solution**: I used my GitHub commit history to verify the dates and reviewed the steps I completed during the assignment.
 
-**Time spent**:
+**Time spent**: 1 hour and 30 min .
 
 ---
 
